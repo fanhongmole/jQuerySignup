@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    background: rgba(0,0,0,.1);
+}
+
+.wrap {
+    width: 800px;
+    margin: 20px auto;
+}
+
+.wrap-sm {
+    width: 400px;
+    padding: 10px;
+}
+
+.input-control {
+    width: 100%;
+}
+
+.warning {
+    display: none;
+    color: red;
+}

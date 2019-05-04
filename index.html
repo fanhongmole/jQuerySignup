@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap wrap-sm">
+        <form action="">
+            <div class="header">
+                <h1>注册界面</h1>
+            </div>
+            <div class="wrap-item">
+                <label>用户名</label>
+                <input data-rule="maxlength:16|minlength:2" 
+                name="username" 
+                type="text" 
+                class="input-control">
+                <label id="username-warning"  class="warning">用户名格式错误</label>
+            </div>
+            <div class="wrap-item">
+                <label>密码</label>
+                <input data-rule="maxlength:32|minlength:6" 
+                name="password" 
+                type="password" 
+                class="input-control">
+                <label id="password-warning"  class="warning">用户名格式</label>
+            </div>
+            <div class="wrap-item">
+                <label>年龄</label>
+                <input data-rule="max:999|min:0" 
+                name="age" 
+                type="text" 
+                class="input-control">
+                <label id="age-warning"  class="warning">用户名格式</label>
+            </div>
+            <div class="wrap-item">
+                <label>性别</label>
+                <input data-rule="max:15|min:2" 
+                name="gender" 
+                type="text" 
+                class="input-control">
+                <label id="gender-warning"  class="warning">用户名格式</label>
+            </div>
+            <button class="btn" type="submit">注册</button>
+        </form>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
