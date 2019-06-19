@@ -1,58 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <title>淘 货 网-注册界面</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <div class="wrap wrap-sm">
-        <form action="">
-            <div class="header">
-                <h1>注册界面</h1>
+    <div class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="nav navbar-header">
+                <a class="nav-brand" href="#">
+                    <span>淘 货 网</span>
+                </a>
             </div>
-            <div class="wrap-item">
-                <label>用户名</label>
-                <input data-rule="maxlength:16|minlength:2" 
-                name="username" 
-                type="text" 
-                class="input-control">
-                <label id="username-warning"  class="warning">用户名格式错误</label>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link" href="#">首页</a></li>
+                    <li><a class="nav-link" href="#">Updates</a></li>
+                    <li><a class="nav-link" href="#">Blog</a></li>
+                    <li><a class="nav-link" href="#">API</a></li>
+                    <li><a class="nav-link" href="#">Extensions</a></li>
+                    <li><a class="nav-link" href="#">FAQ</a></li>
+                </ul>
             </div>
-            <div class="wrap-item">
-                <label>密码</label>
-                <input data-rule="maxlength:32|minlength:6" 
-                name="password" 
-                type="password" 
-                class="input-control">
-                <label id="password-warning"  class="warning">用户名格式</label>
-            </div>
-            <div class="wrap-item">
-                <label>年龄</label>
-                <input data-rule="max:999|min:0" 
-                name="age" 
-                type="text" 
-                class="input-control">
-                <label id="age-warning"  class="warning">用户名格式</label>
-            </div>
-            <div class="wrap-item">
-                <label>性别</label>
-                <input data-rule="max:15|min:2" 
-                name="gender" 
-                type="text" 
-                class="input-control">
-                <label id="gender-warning"  class="warning">用户名格式</label>
-            </div>
-            <button class="btn" type="submit">注册</button>
-        </form>
+
+            <ul class="nav navbar-right">
+                <li class="search">
+                    <form class="nav-search search-form form-inline">
+                        <input class="search-box form-control" type="search" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn" type="submit">
+                                <img src="" alt="">
+                                放大镜
+                            </button>
+                        </span>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="link-btn">
+                        <img src="" alt="">
+                        登录</a>
+                </li>
+            </ul>
+
+        </div>
     </div>
 
-    <script src="js/jquery.js"></script>
+    <div class="update">
+        <div class="container">
+            <p class="message">
+                <a href="#">安卓app</a>
+                现已推出，赶紧下载吧！
+            </p>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8">
+                    <h1>Code editing.
+                        <strong>Redefined.</strong>
+                    </h1>
+                    <div class="lead">
+                        <p>
+                            Free. Built on open source. Runs everywhere.
+                        </p>
+                    </div>
+                    <div class="download-buttoms">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">Download for Windows</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Other platforms and Insiders Edition</p>
+                    <p class="terms">
+                        By using VS Code, you agree to its
+                        <a href="#">license and privacy statement.</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 signform">
+                    <form>
+                        <div class="form-header">
+                            <h1>注册界面</h1>
+                        </div>
+                        <div class="input-item">
+                            <div class="input-group input-group-lg">
+                                <input data-rule="maxlength:16|minlength:2" name="username" type="text" id="username"
+                                    class="form-control" placeholder="Username">
+                                <label for="username" class="input-group-btn">用户名</label>
+                            </div>
+                            <div class="warning">
+                                <label id="username-warning">用户名格式错误</label>
+                            </div>
+                        </div>
+                        <div class="input-item">
+                            <div class="input-group input-group-lg">
+                                <input data-rule="maxlength:32|minlength:6" name="password" type="password"
+                                    id="password" class="form-control" placeholder="Password">
+                                <label for="password" class="input-group-btn">密码</label>
+                            </div>
+                            <div class="warning">
+                                <label id="username-warning">密码格式错误</label>
+                            </div>
+                        </div>
+                        <div class="input-item">
+                            <div class="input-group input-group-lg">
+                                <input data-rule="max:999|min:0" name="age" type="text" id="age" class="form-control"
+                                    placeholder="Age">
+                                <label for="age" class="input-group-btn">年龄</label>
+                            </div>
+                            <div class="warning">
+                                <label id="username-warning">年龄格式错误</label>
+                            </div>
+                        </div>
+                        <div class="input-item">
+                            <div class="input-group input-group-lg">
+                                <input data-rule="max:15|min:2" name="gender" type="text" id="gender"
+                                    class="form-control" placeholder="Gender">
+                                <label for="gender" class="input-group-btn">性别</label>
+                            </div>
+                            <div class="warning">
+                                <label id="username-warning">性别格式错误</label>
+                            </div>
+                        </div>
+                        <small class="terms">
+                            注册即视为同意
+                            <a href="#">相关条款</a>！！
+                        </small>
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">注册</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        
+    </div> 
+
+
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/validator.js"></script>
     <script src="js/input.js"></script>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
 </body>
+
 </html>

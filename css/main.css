@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     background: rgba(0,0,0,.1);
 }
@@ -17,7 +17,197 @@
     width: 100%;
 }
 
+*/
+
+
+html {
+    font-size: 10px;
+}
+
+* {
+    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+}
+
+.navbar {
+    font-size: 16px;
+}
+
+.nav-brand {
+    padding: 15px 15px 15px 36px;
+    line-height: 20px;
+    letter-spacing: -0.04rem;
+}
+
+.navbar .nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.navbar .nav .link-btn {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar .nav a {
+    text-decoration: none;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.navbar-light {
+    padding: 0;
+    min-height: 50px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header,
+.navbar-light {
+    background: #4fc08d;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    opacity: 0.6;
+    padding: 17px 12px 13px;
+    line-height: 20px;
+}
+
+.input-group-btn {
+    position: absolute;
+    z-index: 5;
+}
+
+.update .message {
+    color: #191919;
+    text-align: center;
+    padding: 0 12%;
+    margin: 1.1rem 0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    transition: opacity 0.08s ease-in;
+    opacity: 1;
+    color: #fff;
+}
+
+.link-btn {
+    display: block;
+    line-height: 100%;
+    padding: 17px 24px 17px 40px;
+    background: #a2df89;
+}
+
+/* input::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.6) !important;
+} */
+
+.search .form-control {
+    border: 0;
+    border-radius: 0;
+    padding: 6px 15px 6px 40px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-size: 14px;
+    width: 183px;
+}
+
+.form-control:focus {
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+    outline-offset: -1px;
+    opacity: 1;
+    transition: opacity 0.08s ease-in;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.form-control:hover {
+    outline: 1px solid rgba(255, 255, 255, 0.2);
+    outline-offset: -1px;
+    background: rgba(255, 255, 255, .18);
+}
+
+
+/* header部分 */
+.header h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+.header strong {
+    font-weight: normal;
+}
+
+.lead {
+    line-height: 1.4;
+}
+
+.lead p {
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* 注册表单 */
+.signform {
+    background: #fff;
+    opacity: .92;
+    padding: 0 24px 20px;
+}
+
+.form-header>h1 {
+    color: #191919;
+    font-size: 2.4rem;
+    font-weight: 200;
+}
+
+.input-item {
+    margin-bottom: 1rem;
+}
+
+.input-group .form-control {
+    padding-left: 50px;
+    border-radius: 0;
+}
+
+.input-group .input-group-btn {
+    color: rgba(0, 0, 0, 0.78);
+    height: 100%;
+    width: 50px;
+    line-height: 30px;;
+}
+
 .warning {
-    display: none;
-    color: red;
+    width: 100%;
+    text-align: center;
+    background: #ffebeb;
+    color: #e4393c;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.terms {
+    color: #191919;
+}
+
+.signform .btn {
+    margin-top: 6px;
+    background: #4fc08d;
+    font-size: 18px;
 }

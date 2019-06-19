@@ -21,7 +21,7 @@ $(function () {
         }
 
 
-        function init () {
+        function init() {
 
             /* 获取并传输input的选择器 */
     
@@ -35,7 +35,7 @@ $(function () {
             listen();
         }
 
-        function find_ele () {
+        function find_ele() {
             if (selector instanceof jQuery) {
                 $ele = selector;      
             } else {
@@ -43,7 +43,7 @@ $(function () {
             }
         }
 
-        function parse_rule () {
+        function parse_rule() {
             var rule_str = $ele.data('rule');
             if (!rule_str) return;
             var rule_arr = rule_str.split('|'),
@@ -56,7 +56,7 @@ $(function () {
             } 
         }
 
-        function listen () {
+        function listen() {
             $ele.on('blur',function () {
                 me.get_val();
                 var valid = me.validator.is_valid(val);
@@ -68,11 +68,11 @@ $(function () {
             });
         }
         
-        function get_warning_ele () {
+        function get_warning_ele() {
             $warning_ele = $(get_warning_selector());
         }
 
-        function get_warning_selector () {
+        function get_warning_selector() {
             return '#' + $ele.attr('name') + '-warning';
         }
 

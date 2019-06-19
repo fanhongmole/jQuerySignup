@@ -1,0 +1,24 @@
+{
+  "name": "jQuerySignup",
+  "version": "1.0.0",
+  "description": "jQuerySignup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanhongmole/jQuerySignup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fanhongmole/jQuerySignup/issues"
+  },
+  "homepage": "https://github.com/fanhongmole/jQuerySignup#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1"
+  }
+}
